@@ -56,6 +56,5 @@ maven_install(
         "https://jitpack.io",
         "https://repo.gradle.org/gradle/libs-releases",
         "https://maven.fabricmc.net",
-        "file:///home/ben/git/kotlin-language-server/server/lib",
     ],
 )
