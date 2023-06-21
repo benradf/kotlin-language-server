@@ -1,0 +1,12 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary")
+
+load("//bazel:defs.bzl", "ALL_MAVEN_DEPS")
+
+kt_jvm_binary(
+    name = "server",
+    main_class = "org.javacs.kt.MainKt",
+    srcs = glob(["src/main/kotlin/**/*.kt"]),
+    deps = ALL_MAVEN_DEPS + [
+        "//shared:shared",
+    ],
+)
