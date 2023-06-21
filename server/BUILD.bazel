@@ -11,7 +11,7 @@ kt_jvm_library(
 
 kt_jvm_binary(
     name = "server",
-    main_class = "org.javacs.kt.Main",
+    main_class = "org.javacs.kt.MainKt",
     srcs = glob(["src/main/kotlin/**/*.kt"]),
     deps = ALL_MAVEN_DEPS + [
         "//shared:shared",
