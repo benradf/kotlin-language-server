@@ -1,13 +1,6 @@
-#load("@rules_java//java:defs.bzl", "java_binary")
-load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library", "kt_jvm_binary")
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary")
 
 load("//bazel:defs.bzl", "ALL_MAVEN_DEPS")
-
-kt_jvm_library(
-    name = "server_lib",
-    srcs = glob(["src/main/kotlin/**/*.kt"]),
-    deps = [],
-)
 
 kt_jvm_binary(
     name = "server",
@@ -17,9 +10,3 @@ kt_jvm_binary(
         "//shared:shared",
     ],
 )
-
-
-# ./server/src/main/kotlin
-
-
-
