@@ -10,6 +10,7 @@ ALL_MAVEN_DEPS = [
     "@maven//:org_jetbrains_exposed_exposed_dao",
     "@maven//:org_jetbrains_exposed_exposed_jdbc",
     #"@maven//:org_jetbrains_fernflower",
+    "@maven//:org_jetbrains_intellij_fernflower",
     "@maven//:org_jetbrains_kotlin_kotlin_compiler",
     #"@maven//:org_jetbrains_kotlin_kotlin_jvm",
     "@maven//:org_jetbrains_kotlin_kotlin_reflect",
